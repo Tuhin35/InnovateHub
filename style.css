@@ -1,0 +1,522 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* This is the Full page container*/
+.fullContainer {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header,
+main,
+footer {
+    padding: 1rem;
+}
+
+/* Start left sidebar styles */
+
+
+.sidebar {
+    background-color: #f6e5e5;
+
+    height: 100vh;
+    overflow-y: auto;
+    /* Add vertical scroll */
+}
+
+.sidebar li {
+    font-weight: bold;
+}
+
+.sidebar li :hover {
+    color: blue;
+}
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+.sidebar li a {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+}
+
+.sidebar li.active {
+    background-color: #ccc;
+}
+
+.sidebar .dropdown-icon {
+    font-size: 18px;
+}
+
+.sidebar .submenu {
+    display: none;
+}
+
+.team,
+.folder,
+.user {
+    text-align: left;
+}
+
+.team.active {
+    background-color: #e0e0e0;
+}
+
+.product {
+    position: relative;
+
+}
+
+.submenu,
+.nested-submenu {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+/* Styling for dropdown submenu */
+.submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.submenu li {
+    padding-left: 20px;
+}
+
+.sidebar a {
+    color: #444;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar a:hover {
+    color: #333;
+}
+
+.dropdown .submenu {
+    display: none;
+}
+
+.dropdown.active .submenu {
+    display: block;
+}
+
+.dropdown ul li {
+    text-decoration: none;
+}
+
+.sidebar {
+    background-color: #ddd;
+    width: 350px;
+    padding: 1rem;
+}
+
+.sidebar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-list li {
+    margin-bottom: 1rem;
+}
+
+.sidebar-list a {
+    color: #444;
+    text-decoration: none;
+}
+
+.sidebar-list a:hover {
+    color: #333;
+}
+
+/* start down SideBar*/
+.leftSideComponent{
+ display: flex;
+ flex-direction: column;
+ height: 100vh;
+}
+.downSidebar {
+    
+    margin-top: auto;
+}
+
+.downSidebar li {
+    text-decoration: none;
+    
+}
+
+.downSidebar ul {
+    width: 100%;
+  
+    text-align: start;
+
+}
+
+/* End of  left sidebar styles */
+/* start of  right sidebar styles */
+
+.rightSide-container {
+
+    overflow-x: auto;
+    /* Allow horizontal scroll */
+    overflow-y: hidden;
+    /* Hide vertical scroll */
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .rightSide-container {
+        overflow-x: auto;
+        /* Allow horizontal scroll */
+        overflow-y: hidden;
+        /* Hide vertical scroll */
+    }
+}
+
+/*Products  section style start*/
+.headerSidebar {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rightSideHeder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.rightText {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.upperTable {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.component-product {
+    display: flex;
+    flex-direction: row;
+}
+
+/* End  product section styles */
+/* Start Brand filter section styles */
+
+.headerTable {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.headerRight {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.tag {
+    margin: 5px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-options {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.sort-by {
+    margin-right: 10px;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-buttons button {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.import-export {
+    display: flex;
+    justify-content: space-between;
+}
+
+.import-export button {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section {
+    padding-bottom: 5px;
+}
+
+
+
+.import-export {
+    display: flex;
+    justify-content: end;
+}
+
+/*End of the Brand sort filter*/
+/*Start of the Brand table */
+
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    /* Adjust width as needed */
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #f3afaf;
+}
+
+td:hover {
+    color: white;
+    background-color: black;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.brand-image {
+    width: 20px;
+    height: 20px;
+    border: #333 solid;
+    border-radius: 50%;
+   
+    margin-right: 10px;
+   
+    display: inline-block;
+    
+}
+
+.myTable {
+    padding: 2px;
+    margin: 2px;
+    border-radius: 50%;
+}
+
+
+
+
+#myTable {
+    width: 100%;
+    /* Make table take full width */
+    border-collapse: collapse;
+}
+
+/* Styles for table rows and cells */
+#myTable tr {
+    border-bottom: 1px solid #ddd;
+}
+
+#myTable th,
+#myTable td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Responsive styles for the table container */
+
+.scrollbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f1f1f1;
+    overflow-x: auto;
+    /* Allow horizontal scroll */
+    overflow-y: hidden;
+    /* Hide vertical scroll */
+}
+
+.member-images {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+}
+
+.member-count-overflow {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.img-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%
+}
+
+
+
+
+
+
+/* End of the table ///////////////*/
+
+
+
+
+/* Start of footer style ///////////////*/
+
+.selected-count {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+ 
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-list a:hover {
+    color: #ddd;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* Main styles */
+main {
+    display: flex;
+    flex-grow: 1;
+}
+
+
+.content {
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+nav {
+    background-color: #f0f0f0;
+    width: 200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.fixed-footer ul {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    left: 25%;
+    bottom: 20px;
+    width: 50%;
+    background-color: #f0f0f0;
+    /* Change the background color as needed */
+    padding: 4px;
+    text-align: center;
+    /* Or adjust as needed for your footer layout */
+}
+
+.fixed-footer li {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+/* End of Footer////////////*/
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
